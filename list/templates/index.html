@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Log In</title>
+
+<link rel="stylesheet" href="{% static 'login/login.css' %}" />
+
+</head>
+<body>
+
+        {% if user.is_authentificated %}
+                <a href="{% url 'logout' %}">Log Out</a>
+        {% else %}
+            <div align="center" class="options">
+                <a href="{% url 'login_url' %}" type= "button" >Login</a>
+                <a href="{% url 'register' %}" type= "button" >Register</a>
+            </div>
+        {% endif %}
+
+
+<style>
+    body{
+    background: url({% static "5.jpg" %});
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+</style>
+
+</body>
+</html>
