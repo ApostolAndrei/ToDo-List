@@ -1,2 +1,2 @@
 # ToDo-List
-ToDo List + Authentification Form (each user should have his own ToDo list { *work in progress* } ) using Django HTML  and CSS 
+ToDo List + Authentification Form (each user should has his own ToDo list  ) using Django HTML  and CSS 
